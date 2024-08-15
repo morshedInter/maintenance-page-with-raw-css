@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.maintenance-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    /* Background color to match the page theme */
+}
+
+.content-box {
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 50px rgba(203, 213, 225, 0.5);
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.title {
+    font-size: 1.875rem;
+    /* Default for small screens */
+    margin-top: 1.5rem;
+    font-weight: bold;
+    cursor: default;
+}
+
+ .logo {
+    width: 9rem;
+    /* Default for small screens */
+    margin-top: 1.875rem;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3.125rem;
+    }
+
+    .logo {
+        width: 15rem;
+    }
+}
+
+.animation-container {
+    margin-top: 1.5rem;
+}
+
+.animation {
+    height: 300px;
+    width: 300px;
+}
+
+@media (min-width: 768px) {
+    .animation {
+        height: 400px;
+        width: 500px;
+    }
+}
+
+.message {
+    text-align: center;
+}
+
+.message p {
+    font-size: 1rem;
+    color: #000000;
+    cursor: default;
+}
+
+@media (min-width: 768px) {
+    .message p {
+        font-size: 1.5rem;
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.social-links {
+    display: flex;
+    
+}
+
+.social-links a {
+    font-size: 20px;
+    color: white;
+    margin-right: 0.5rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.social-links a:hover {
+    color: #ff0000;
+    /* Replace with hover color */
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        padding: 0.5rem 2.5rem;
+        flex-direction: row;
+    }
+}
+
+.mobile-break {
+    display: inline;
+}
+
+@media (min-width: 768px) {
+    .mobile-break {
+        display: none;
+    }
+}
